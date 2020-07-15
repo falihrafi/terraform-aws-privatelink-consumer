@@ -44,3 +44,9 @@ variable "private_dns_enabled" {
   default     = "false"
   description = "Only for Interface VPC endpoint to AWS services and AWS Marketplace partner service. Whether or not to associate a private hosted zone with the specified VPC"
 }
+
+variable "additional_tags" {
+  type        = "map"
+  description = "Additional tags to be added to the VPC Endpoint"
+  default     = {}
+}

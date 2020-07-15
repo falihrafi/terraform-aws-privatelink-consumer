@@ -6,11 +6,12 @@ resource "aws_vpc_endpoint" "service_consumer" {
   vpc_endpoint_type   = "Interface"
   private_dns_enabled = "${var.private_dns_enabled}"
 
-  tags = {
-    Name          = "${var.service_name}-vpce"
-    Description   = "${var.description}"
-    Environment   = "${var.environment}"
-    ProductDomain = "${var.product_domain}"
-    ManagedBy     = "terraform"
-  }
+  tags = "${merge(var.additional_tags, map(
+    "Name"          , "${var.service_name}-vpce",
+    "Description"   , "${var.description}",
+    "Environment"   , "${var.environment}",
+    "ProductDomain" , "${var.product_domain}",
+    "ManagedBy"     , "terraform"
+    ))
+  }"
 }
