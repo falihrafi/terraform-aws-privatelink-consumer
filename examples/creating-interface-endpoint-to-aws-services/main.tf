@@ -7,8 +7,8 @@ module "service-consumer" {
   private_dns_enabled = "true"
 
   vpc_id                = local.vpc_id
-  available_subnet_ids  = [local.available_subnet_ids]
-  security_group_ids    = [local.security_group_ids]
+  available_subnet_ids  = local.available_subnet_ids
+  security_group_ids    = local.security_group_ids
   service_provider_name = local.service_provider_name
 }
 

@@ -6,9 +6,14 @@ resource "aws_vpc_endpoint" "service_consumer" {
   vpc_endpoint_type   = "Interface"
   private_dns_enabled = var.private_dns_enabled
 
+<<<<<<< HEAD
   tags = merge(
     {
     Name          = format(var.service_name, "-vpce")
+=======
+  tags = {
+    Name          = "var.service_name-vpce"
+>>>>>>> fix count index avail subnets
     Description   = var.description
     Environment   = var.environment
     ProductDomain = var.product_domain
