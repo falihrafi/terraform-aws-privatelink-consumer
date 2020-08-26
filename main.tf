@@ -12,8 +12,12 @@ resource "aws_vpc_endpoint" "service_consumer" {
     Name          = format(var.service_name, "-vpce")
 =======
   tags = {
+<<<<<<< HEAD
     Name          = "var.service_name-vpce"
 >>>>>>> fix count index avail subnets
+=======
+    Name          = format("%s-%s", var.service_name, "vpce")
+>>>>>>> edit tags
     Description   = var.description
     Environment   = var.environment
     ProductDomain = var.product_domain
