@@ -8,11 +8,11 @@ resource "aws_vpc_endpoint" "service_consumer" {
 
   tags = merge(
     {
-    Name          = format("%s-%s", var.service_name, "vpce")
-    Description   = var.description
-    Environment   = var.environment
-    ProductDomain = var.product_domain
-    ManagedBy     = "terraform"
+      Name          = format("%s-%s", var.service_name, "vpce")
+      Description   = var.description
+      Environment   = var.environment
+      ProductDomain = var.product_domain
+      ManagedBy     = "terraform"
     },
     var.additional_tags,
   )
