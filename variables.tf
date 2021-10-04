@@ -46,7 +46,7 @@ variable "private_dns_enabled" {
 }
 
 variable "additional_tags" {
-  type        = "map"
+  type        = map
   description = "Additional tags to be added to the VPC Endpoint"
   default     = {}
 }
