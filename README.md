@@ -1,6 +1,6 @@
 # terraform-aws-privatelink-consumer
 
-[![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.12.0,<=0.13.0-blue.svg)](https://releases.hashicorp.com/terraform/)
+[![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.13.0,<=0.13.7-blue.svg)](https://releases.hashicorp.com/terraform/)
 [![Release](https://img.shields.io/github/release/traveloka/terraform-aws-privatelink-consumer.svg)](https://github.com/traveloka/terraform-aws-privatelink-consumer/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/traveloka/terraform-aws-privatelink-consumer.svg)](https://github.com/traveloka/terraform-aws-privatelink-consumer/commits/master)
 [![Issues](https://img.shields.io/github/issues/traveloka/terraform-aws-privatelink-consumer.svg)](https://github.com/traveloka/terraform-aws-privatelink-consumer/issues)
@@ -58,12 +58,14 @@ Subnets used by interface endpoint must be on the same Availability Zone with th
 
 ## Terraform Version
 
-The latest stable version of Terraform which this module tested working is Terraform `0.12.31` on 2021/09/30
+The latest stable version of Terraform which this module tested working is Terraform `0.13.7` on 2021/10/04
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
 
 ## Providers
 
